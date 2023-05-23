@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Users\Aggelos\C\RotateArrayRightByN\RotateArrayRightByN\main.c(48,3): warning C4033: 'rotateArrayByNMoreEfficient' must return a value
+C:\Users\Aggelos\C\RotateArrayRightByN\RotateArrayRightByN\main.c(55): warning C4715: 'rotateArrayByNMoreEfficient': not all control paths return a value
+  RotateArrayRightByN.vcxproj -> C:\Users\Aggelos\C\RotateArrayRightByN\x64\Debug\RotateArrayRightByN.exe

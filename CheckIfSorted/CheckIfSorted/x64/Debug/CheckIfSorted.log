@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Users\Aggelos\C\CheckIfSorted\CheckIfSorted\main.c(40,3): warning C4033: 'checkIfSorted' must return a value
+C:\Users\Aggelos\C\CheckIfSorted\CheckIfSorted\main.c(44): warning C4715: 'checkIfSorted': not all control paths return a value
+  CheckIfSorted.vcxproj -> C:\Users\Aggelos\C\CheckIfSorted\x64\Debug\CheckIfSorted.exe
