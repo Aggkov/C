@@ -7,7 +7,7 @@
 #define SIZE2 53
 
 int main() {
-	char sourceArr[SIZE1] = { 'c', 'f', 'B', 'H', 'a', 'B', 'f', 'c', 'r', ' ', ' ', ' ', ' ' };
+	char sourceArr[SIZE1] = { 'c', 'f', 'A', 'H', 'a', 'A', 'f', 'c', 'r', ' ', ' ', ' ', ' ' };
 	int countArr[SIZE2] = { 0 };
 	int i;
 	for (i = 0; i < SIZE1; i++) {
@@ -17,7 +17,7 @@ int main() {
 			countArr[index]++;
 		}
 		if (sourceArr[i] >= 'A' && sourceArr[i] <= 'Z') {
-			int index = sourceArr[i] - 'A' + 25;
+			int index = sourceArr[i] - 'A' + 26;
 			countArr[index]++;
 		}
 		// if space
@@ -35,13 +35,18 @@ int main() {
 				element = i + 'a';
 			}
 			if (i >= 26 && i <= 51) {
-				element = (i + 'A') % 26 + 53;
+				//element = (i + 'A') % 26 + 53;
+				element = i - 26 + 'A';
 			}
 			// if space
 			else if (i == 52) {
 				element = ' ';
 			}
 		}
+	}
+	if (element == ' ') {
+		printf("Character space was found the most times = %d\n", max);
+		return;
 	}
 	printf("Element %c was found the most times = %d\n", element, max);
 	// find if there is another value occuring same times as max found already
